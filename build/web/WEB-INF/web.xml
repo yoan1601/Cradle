@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>InitServlet</servlet-name>
+        <servlet-class>servlet.InitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddNode</servlet-name>
+        <servlet-class>servlet.AddNode</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DropNode</servlet-name>
+        <servlet-class>servlet.DropNode</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InitServlet</servlet-name>
+        <url-pattern>/InitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddNode</servlet-name>
+        <url-pattern>/AddNode</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DropNode</servlet-name>
+        <url-pattern>/DropNode</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
